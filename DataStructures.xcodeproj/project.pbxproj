@@ -56,6 +56,8 @@
 			children = (
 				535CAB7520224551003E2BB2 /* Controller.cpp */,
 				535CAB7620224551003E2BB2 /* Controller.hpp */,
+				535CAB7C20224F02003E2BB2 /* FileController.cpp */,
+				535CAB7D20224F02003E2BB2 /* FileController.hpp */,
 				535CAB78202246A6003E2BB2 /* Tools */,
 			);
 			path = Controller;
@@ -83,10 +85,15 @@
 			children = (
 				535CAB79202246BF003E2BB2 /* Timer.cpp */,
 				535CAB7A202246BF003E2BB2 /* Timer.hpp */,
-				535CAB7C20224F02003E2BB2 /* FileController.cpp */,
-				535CAB7D20224F02003E2BB2 /* FileController.hpp */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		535CAB8320225961003E2BB2 /* Structures */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Structures;
 			sourceTree = "<group>";
 		};
 		53C925A62022439100107FC5 = {
@@ -129,6 +136,7 @@
 		53C925BC2022446300107FC5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				535CAB8320225961003E2BB2 /* Structures */,
 			);
 			path = Model;
 			sourceTree = "<group>";

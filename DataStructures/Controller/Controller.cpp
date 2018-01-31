@@ -18,10 +18,10 @@ void Controller :: start() {
     codeTimer.displayInformation();
     codeTimer.resetTimer();
     codeTimer.startTimer();
-    for (int i = 0; i < 10000; i++) {
-        cout << "Index is " << i;
+    vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/ilam9372/XCode Projects/DataStructures/DataStructures/Data/crime.csv");
+    for (int i = 234; i < 400; i += 30) {
+        cout << i << " is " << myData[i] << endl;
     }
-    cout << endl;
     codeTimer.stopTimer();
     codeTimer.displayInformation();
 }

@@ -15,10 +15,12 @@ vector<CrimeData> FileController :: readCrimeDataToVector(string filename) {
     ifstream dataFile(filename);
     if (dataFile.is_open()) {
         while (!dataFile.eof()) {
-            getline(dataFile, currentCSVLine, '\r');
+            getline(dataFile, currentCSVLine, '\n');
             if (rowCount != 0) {
-                CrimeData row(currentCSVLine);
-                crimeVector.push_back(row);
+                if (currentCSVLine.length() != 0) {
+                    CrimeData row(currentCSVLine);
+                    crimeVector.push_back(row);
+                }
             }
             rowCount++;
         }
