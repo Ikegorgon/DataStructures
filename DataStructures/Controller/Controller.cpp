@@ -19,7 +19,7 @@ void Controller :: start() {
     codeTimer.resetTimer();
     codeTimer.startTimer();
     vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/ilam9372/XCode Projects/DataStructures/DataStructures/Data/crime.csv");
-    for (int i = 234; i < 400; i += 30) {
+    for (int i = 200; i < 216; i++) {
         cout << i << " is " << myData[i] << endl;
     }
     codeTimer.stopTimer();
