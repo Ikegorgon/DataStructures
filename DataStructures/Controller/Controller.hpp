@@ -15,6 +15,8 @@
 #include "FileController.hpp"
 
 class Controller {
+private:
+    void findMaxAndMin();
 public:
     void start();
 };
