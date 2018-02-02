@@ -29,14 +29,15 @@ public:
     int getsize() const;
     Type getFromIndex(int index);
     void setAtIndex(int index, Type data);
-}
+};
 template <class Type>
 Array<Type> :: Array(int size) {
     assert(size > 0);
     this->size = size;
     internalArray = new Type[size];
 }
-template Array<Type> :: Array(const Array<Type> & toCopy) {
+template <class Type>
+Array<Type> :: Array(const Array<Type> & toCopy) {
     this->size = toCopy.getSize();
     internalArray = new Type[size];
     for (int i = 0; i < size; i++) {
@@ -72,11 +73,11 @@ Type Array<Type> :: operator [] (int index) const {
     return internalArray[index];
 }
 template <class Type>
-int Array<Type> :: getSize() const {
+int Array<Type> :: getsize() const {
     return size;
 }
 template <class Type>
-Type Array<Tpye> :: getFromIndex(int index) {
+Type Array<Type> :: getFromIndex(int index) {
     assert(index >= 0 && index < size);
     Type value = internalArray[index];
     return value;
