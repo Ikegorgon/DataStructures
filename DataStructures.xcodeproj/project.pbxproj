@@ -28,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		533B77B52024F3D3006C221E /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
+		535A9A3D202A2C5400693EAF /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
 		535CAB722022452B003E2BB2 /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
 		535CAB7520224551003E2BB2 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
 		535CAB7620224551003E2BB2 /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
@@ -52,6 +53,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		535A9A3B202A2C3900693EAF /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				535A9A3D202A2C5400693EAF /* Node.hpp */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
 		535CAB6F20224503003E2BB2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +147,7 @@
 		53C925BC2022446300107FC5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				535A9A3B202A2C3900693EAF /* Nodes */,
 				535CAB8320225961003E2BB2 /* Structures */,
 			);
 			path = Model;
