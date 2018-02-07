@@ -11,6 +11,10 @@
 using namespace std;
 
 void Controller :: start() {
+    ArrayTester arrayTest;
+    arrayTest.testArrayUse();
+    arrayTest.testAdvancedArray();
+    
     Timer codeTimer;
     codeTimer.startTimer();
     cout << "Look code on the screen" << endl;
