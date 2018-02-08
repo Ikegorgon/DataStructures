@@ -42,6 +42,9 @@
 		535CAB7F20224F87003E2BB2 /* CrimeData.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CrimeData.cpp; sourceTree = "<group>"; };
 		535CAB8020224F87003E2BB2 /* CrimeData.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
 		535CAB8220225133003E2BB2 /* crime.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
+		538DB57E202CE0AE00B6B91A /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
+		538DB580202CE1F300B6B91A /* Node.uxf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Node.uxf; sourceTree = "<group>"; };
+		538DB582202CE20700B6B91A /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
 		53C925AF2022439100107FC5 /* DataStructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructures; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -59,7 +62,9 @@
 		535A9A3B202A2C3900693EAF /* Nodes */ = {
 			isa = PBXGroup;
 			children = (
+				538DB580202CE1F300B6B91A /* Node.uxf */,
 				535A9A3D202A2C5400693EAF /* Node.hpp */,
+				538DB582202CE20700B6B91A /* LinearNode.hpp */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -115,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				533B77B52024F3D3006C221E /* Array.hpp */,
+				538DB57E202CE0AE00B6B91A /* List.hpp */,
 			);
 			path = Structures;
 			sourceTree = "<group>";
