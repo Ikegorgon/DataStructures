@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1090</x>
+      <y>430</y>
+      <w>270</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>Node&lt;Type&gt;
+bg=green
+--
+- #data : Type
+--
++ Node() : constructor
++ Node(Type data): constructor
++ setData(Type data) : void
++ getData() : Type</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1150</x>
+      <y>240</y>
+      <w>160</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>140.0;190.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>770</x>
+      <y>100</y>
+      <w>470</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>LinearNode&lt;Type&gt;
+bg=cyan
+--
+- LinearNode&lt;Type&gt; * next
+--
++ LinearNode() : constructor
++ LinearNode(Type data): constructor
++ LinearNode(Type data, LinearNode&lt;Type&gt; * next) : constructor
++ setNextNode(LinearNode&lt;Type *) : void
++ getNextNode() : LinearNodes&lt;Type&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>530</x>
+      <y>170</y>
+      <w>260</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;190.0;240.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>240</x>
+      <y>350</y>
+      <w>300</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>List&lt;Tpe&gt;
+bg=blue
+--
+- #size : int
+--
++ add(Type item) : void
++ addatIndex(int index, Type item) : void
++ remove(Type item) : Type
++ getFromIndex(int index) : Type
++ getSize() const : int
++ getFront() : LinearNode &lt;Type&gt; *
++ getEnd() : LinearNode&lt;Type&gt; *</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
