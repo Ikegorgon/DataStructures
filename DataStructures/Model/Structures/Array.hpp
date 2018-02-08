@@ -38,7 +38,7 @@ Array<Type> :: Array(int size) {
 }
 template <class Type>
 Array<Type> :: Array(const Array<Type> & toCopy) {
-    this->size = toCopy.getSize();
+    this->size = toCopy.getsize();
     internalArray = new Type[size];
     for (int i = 0; i < size; i++) {
         internalArray[i] = toCopy[i];
@@ -51,9 +51,9 @@ Array<Type> :: ~Array() {
 template <class Type>
 Array<Type> & Array<Type> :: operator = (const Array<Type> & toAssign) {
     if (&toAssign != this) {
-        if (size != toAssign.getSize()) {
+        if (size != toAssign.getsize()) {
             delete [] internalArray;
-            size = toAssign.egtSize();
+            size = toAssign.getsize();
             internalArray = new Type [size];
         }
         for (int i = 0; i < size; i++) {
