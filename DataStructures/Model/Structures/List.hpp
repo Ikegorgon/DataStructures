@@ -14,6 +14,7 @@
 
 using namespace std;
 
+template <class Type>
 class List {
 protected:
     int size;
