@@ -25,7 +25,7 @@ public:
 };
 
 template <class Type>
-LinearNode<Type> :: LinearNode() : Node<Type> {
+LinearNode<Type> :: LinearNode() : Node<Type>() {
     this->next = nullptr;
 }
 
