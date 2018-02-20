@@ -80,6 +80,17 @@ void LinkedList<Type> :: addAtIndex(int index, Type item) {
     }
 }
 template <class Type>
+Type LinkedList<Type> :: getFromIndex(int index) {
+    assert(index >= 0 && index < this->size);
+    Type data;
+    LinearNode<Type> * current = front;
+    for (int position = 0; position < index; position++) {
+        current = current->getNextNode();
+    }
+    data = current->getData();
+    return data;
+}
+template <class Type>
 Type LinkedList<Type> :: remove(int index) {
     assert(index >= 0 && index < this->size);
     LinearNode<Type> * current = front;
@@ -102,11 +113,11 @@ Type LinkedList<Type> :: remove(int index) {
             current = toBeRemoved->getNextNode();
             previous->setNextNode(current);
         }
-        this->size -= 1;
-        removeData = toBeRemoved->getData();
-        delete toBeRemoved;
-        return removeData;
     }
+    this->size -= 1;
+    removeData = toBeRemoved->getData();
+    delete toBeRemoved;
+    return removeData;
 }
 template <class Type>
 LinearNode<Type> * LinkedList<Type> :: getEnd() {
@@ -120,5 +131,9 @@ template <class Type>
 int LinkedList<Type> :: getSize() const {
     return this-> size;
 }
+//template <class Type>
+//LinkedList<Type> :: getFromIndex(index) {
+//    return this->index;
+//}
 
 #endif /* LinkedList_hpp */
