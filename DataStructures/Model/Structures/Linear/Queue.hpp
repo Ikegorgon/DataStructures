@@ -19,7 +19,7 @@ class Queue : public LinkedList<Type> {
 public:
     Queue();
     ~Queue();
-    void enqueu(Type data);
+    void enqueue(Type data);
     Type dequeue();
     Type peek();
     void clear();
@@ -27,7 +27,7 @@ public:
     void addAtIndex(int index, Type data);
     Type getFromIndex(int index);
     Type remove(int index);
-}
+};
 template <class Type>
 Queue<Type> :: Queue() : LinkedList<Type>() {
     
