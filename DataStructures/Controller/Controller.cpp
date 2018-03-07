@@ -11,24 +11,27 @@
 using namespace std;
 
 void Controller :: start() {
-    ArrayTester arrayTest;
-    arrayTest.testArrayUse();
-    arrayTest.testAdvancedArray();
-    
-    Timer codeTimer;
-    codeTimer.startTimer();
-    cout << "Look code on the screen" << endl;
-    codeTimer.stopTimer();
-    codeTimer.displayInformation();
-    codeTimer.resetTimer();
-    codeTimer.startTimer();
-    vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/ilam9372/XCode Projects/DataStructures/DataStructures/Data/crime.csv");
-    for (int i = 200; i < 216; i++) {
-        cout << i << " is " << myData[i] << endl;
-    }
-    codeTimer.stopTimer();
-    codeTimer.displayInformation();
-    findMaxAndMin();
+//    ArrayTester arrayTest;
+//    arrayTest.testArrayUse();
+//    arrayTest.testAdvancedArray();
+//
+//    Timer codeTimer;
+//    codeTimer.startTimer();
+//    cout << "Look code on the screen" << endl;
+//    codeTimer.stopTimer();
+//    codeTimer.displayInformation();
+//    codeTimer.resetTimer();
+//    codeTimer.startTimer();
+//    vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/ilam9372/XCode Projects/DataStructures/DataStructures/Data/crime.csv");
+//    for (int i = 200; i < 216; i++) {
+//        cout << i << " is " << myData[i] << endl;
+//    }
+//    codeTimer.stopTimer();
+//    codeTimer.displayInformation();
+//    findMaxAndMin();
+    RecursionTester test;
+    test.testRecursionNumbers();
+    test.testRecursionString();
 }
 
 void Controller :: findMaxAndMin() {
