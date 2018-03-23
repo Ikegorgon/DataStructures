@@ -57,6 +57,7 @@
 		538DB57E202CE0AE00B6B91A /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		538DB580202CE1F300B6B91A /* Node.uxf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Node.uxf; sourceTree = "<group>"; };
 		538DB582202CE20700B6B91A /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
+		538E77452060362400AFD66D /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Graph.hpp; sourceTree = "<group>"; };
 		53BAA9E12034BB13003FC744 /* LinkedListTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedListTester.cpp; sourceTree = "<group>"; };
 		53BAA9E22034BB13003FC744 /* LinkedListTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedListTester.hpp; sourceTree = "<group>"; };
 		53BAA9E52034BCE4003FC744 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
@@ -79,6 +80,7 @@
 		531AEAFA203F4A620093DF9D /* NonLinear */ = {
 			isa = PBXGroup;
 			children = (
+				538E77452060362400AFD66D /* Graph.hpp */,
 			);
 			path = NonLinear;
 			sourceTree = "<group>";
