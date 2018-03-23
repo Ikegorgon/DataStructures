@@ -20,7 +20,7 @@ class Graph {
 private:
     static const int MAXIMUM = 50;
     bool adjacencyMatrix [MAXIMUM][MAXIMUM];
-    int weigtCostMatrix [MAXIMUM][MAXIMUM];
+    int weightCostMatrix [MAXIMUM][MAXIMUM];
     Type graphData[MAXIMUM];
     int vertexCount;
     void depthFirstTraversal(Graph<Type> & graph, int vertex, bool markedVertices[]);
@@ -108,17 +108,17 @@ void Graph<Type> :: addEdge(int source, int target) {
 }
 
 template <class Type>
-void Graph<Type> :: addEdgeCost(int soure, int target, int cost) {
+void Graph<Type> :: addEdgeCost(int source, int target, int cost) {
     assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
-    weightCostMartix [source][target] = cost;
+    weightCostMatrix [source][target] = cost;
     weightCostMatrix [target][source] = cost;
 }
 
 template <class Type>
 void Graph<Type> :: addEdgeUndirected(int source, int target) {
     assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
-    adjacenyMatrix[source][target] = true;
-    adjacenyMatrix[target][source] = true;
+    adjacencyMatrix[source][target] = true;
+    adjacencyMatrix[target][source] = true;
 }
 
 template <class Type>
@@ -142,8 +142,8 @@ std::set<int> Graph<Type> :: neighbors(int vertex) const {
     assert(vertex < vertexCount);
     std::set<int> vertexNeighbors;
     for(int i = 0; i < vertexCount; i++) {
-        if (adjacencyMatrix[vertex][index]) {
-            vertexNeighbors.insert(index);
+        if (adjacencyMatrix[vertex][i]) {
+            vertexNeighbors.insert(i);
         }
     }
     return vertexNeighbors;
@@ -151,7 +151,7 @@ std::set<int> Graph<Type> :: neighbors(int vertex) const {
 
 template <class Type>
 void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex) {
-    bool visitedVertices[MAXIMUM];
+    bool visitedVerticies[MAXIMUM];
     assert(vertex < currentGraph.size());
     std::fill_n(visitedVerticies, currentGraph.size(), false);
     depthFirstTraversal(currentGraph, vertex, visitedVerticies);
@@ -160,7 +160,7 @@ void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex) 
 template<class Type>
 void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex, bool * visited) {
     std::set<int> connections = currentGraph.neighbors(vertex);
-    std::set<int>::iterator setIteraator;
+    std::set<int>::iterator setIterator;
     visited[vertex] = true;
     cout << currentGraph[vertex] << ", " << endl;
     for (setIterator = connections.begin(); setIterator != connections.end(); setIterator++) {
@@ -176,17 +176,18 @@ int Graph<Type> :: costTraversal(Graph<Type> & currentGraph, int vertex) {
     int cost = 0;
     bool visited[MAXIMUM];
     std::set<int> connections;
-    std::set<int>::interior setIterator;
+    std::set<int>::iterator setIterator;
     std::queue<int> vertexQueue;
     std::fill_n(visited, currentGraph.size, false);
     visited[vertex] = true;
     vertexQueue.push(vertex);
-    while (!visitedQueue.empty()) {
+    while (!vertexQueue.empty()) {
+        int currentIndex = vertexQueue.front();
         connections = currentGraph.neighbors(vertexQueue.front());
         vertexQueue.pop();
         for(setIterator = connections.begin(); setIterator != connections.end(); setIterator++) {
             if (!visited[*setIterator]) {
-                cost += weightCostMatrix[vertix][*setIterator];
+                cost += weightCostMatrix[currentIndex][*setIterator];
                 visited[*setIterator] = true;
                 vertexQueue.push(*setIterator);
             }
@@ -200,13 +201,13 @@ void Graph<Type> :: breadthFirstTraversal(Graph<Type> & currentGraph, int vertex
     assert(vertex < currentGraph.size());
     bool visited[MAXIMUM];
     std::set<int> connections;
-    std::set<int>::interior setIterator;
+    std::set<int>::iterator setIterator;
     std::queue<int> vertexQueue;
     std::fill_n(visited, currentGraph.size, false);
     visited[vertex] = true;
     cout << currentGraph[vertex] << endl;
     vertexQueue.push(vertex);
-    while (!visitedQueue.empty()) {
+    while (!vertexQueue.empty()) {
         connections = currentGraph.neighbors(vertexQueue.front());
         vertexQueue.pop();
         for(setIterator = connections.begin(); setIterator != connections.end(); setIterator++) {
