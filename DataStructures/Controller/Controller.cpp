@@ -29,9 +29,11 @@ void Controller :: start() {
 //    codeTimer.stopTimer();
 //    codeTimer.displayInformation();
 //    findMaxAndMin();
-    RecursionTester test;
-    test.testRecursionNumbers();
-    test.testRecursionString();
+//    RecursionTester test;
+//    test.testRecursionNumbers();
+//    test.testRecursionString();
+    GraphTester test;
+    test.testGraphs();
 }
 
 void Controller :: findMaxAndMin() {

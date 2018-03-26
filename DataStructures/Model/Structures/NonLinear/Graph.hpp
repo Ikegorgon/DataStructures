@@ -178,7 +178,7 @@ int Graph<Type> :: costTraversal(Graph<Type> & currentGraph, int vertex) {
     std::set<int> connections;
     std::set<int>::iterator setIterator;
     std::queue<int> vertexQueue;
-    std::fill_n(visited, currentGraph.size, false);
+    std::fill_n(visited, currentGraph.size(), false);
     visited[vertex] = true;
     vertexQueue.push(vertex);
     while (!vertexQueue.empty()) {
@@ -203,7 +203,7 @@ void Graph<Type> :: breadthFirstTraversal(Graph<Type> & currentGraph, int vertex
     std::set<int> connections;
     std::set<int>::iterator setIterator;
     std::queue<int> vertexQueue;
-    std::fill_n(visited, currentGraph.size, false);
+    std::fill_n(visited, currentGraph.size(), false);
     visited[vertex] = true;
     cout << currentGraph[vertex] << endl;
     vertexQueue.push(vertex);
