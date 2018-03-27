@@ -13,68 +13,69 @@
 
 template<class Type>
 class Tree {
+protected:
+    BinaryTreeNode<Type> * root;
 public:
-    BinaryTreeNode<Type> root;
-    int getSize();
-    int getHeight();
-    bool isComplete();
-    bool isBalanced();
-    void insert(Type);
-    bool contains(Type);
-    void remove(Type);
-    void inOrderTraversal();
-    void preOrderTraversal();
-    void postOrderTraversal();
+    virtual int getSize() = 0;
+    virtual int getHeight() = 0;
+    virtual bool isComplete() = 0;
+    virtual bool isBalanced() = 0;
+    virtual void insert(Type) = 0;
+    virtual bool contains(Type) = 0;
+    virtual void remove(Type) = 0;
+    virtual void inOrderTraversal() = 0;
+    virtual void preOrderTraversal() = 0;
+    virtual void postOrderTraversal() = 0;
 };
 
-template<class Type>
-int Tree :: getSize() {
-    
-}
-
-template<class Type>
-int Tree :: getHeight() {
-    
-}
-
-template<class Type>
-bool Tree :: isComplete() {
-    
-}
-
-template<class Type>
-bool Tree :: isBalanced() {
-    
-}
-
-template<class Type>
-void Tree :: insert(Type) {
-    
-}
-
-template<class Type>
-bool Tree :: contains(Type) {
-    
-}
-
-template<class Type>
-void Tree :: remove(Type) {
-    
-}
-
-template<class Type>
-void Tree :: inOrderTraversal() {
-    
-}
-
-template<class Type>
-void Tree :: preOrderTraversal() {
-    
-}
-
-template<class Type>
-void Tree :: postOrderTraversal() {
-    
-}
+//template<class Type>
+//int Tree :: getSize() {
+//
+//}
+//
+//template<class Type>
+//int Tree :: getHeight() {
+//
+//}
+//
+//template<class Type>
+//bool Tree :: isComplete() {
+//
+//}
+//
+//template<class Type>
+//bool Tree :: isBalanced() {
+//
+//}
+//
+//template<class Type>
+//void Tree :: insert(Type) {
+//
+//}
+//
+//template<class Type>
+//bool Tree :: contains(Type) {
+//
+//}
+//
+//template<class Type>
+//void Tree :: remove(Type) {
+//
+//}
+//
+//template<class Type>
+//void Tree :: inOrderTraversal() {
+//
+//}
+//
+//template<class Type>
+//void Tree :: preOrderTraversal() {
+//
+//}
+//
+//template<class Type>
+//void Tree :: postOrderTraversal() {
+//
+//}
 
 #endif /* Tree_hpp */
