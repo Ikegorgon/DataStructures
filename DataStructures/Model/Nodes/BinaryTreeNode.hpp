@@ -9,12 +9,11 @@
 #ifndef BinaryTreeNode_hpp
 #define BinaryTreeNode_hpp
 
-#include <stdio.h>
 #include "Node.hpp"
 
 template<class Type>
-public class BinaryTreeNode() {
-protected:
+class BinaryTreeNode : public Node<Type> {
+private:
     BinaryTreeNode<Type> * root;
     BinaryTreeNode<Type> * left;
     BinaryTreeNode<Type> * right;
@@ -30,32 +29,32 @@ public:
 };
 
 template<class Type>
-BinaryTreeNode<Type> :: BinBinaryTreeNode() : Node<Type>() {
-    this->root = nullptr;
-    this->left = nullptr;
-    this->right = nullptr;
+BinaryTreeNode<Type> :: BinaryTreeNode() : Node<Type>() {
+    root = nullptr;
+    left = nullptr;
+    right = nullptr;
 }
 
 template<class Type>
 BinaryTreeNode<Type> :: BinaryTreeNode(Type data) : Node<Type>(data) {
-    this->root = nullptr;
-    this->left = nullptr;
-    this->right = nullptr;
+    root = nullptr;
+    left = nullptr;
+    right = nullptr;
 }
 
 template<class Type>
 BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRoot() {
-    return root;
+    return this->root;
 }
 
 template<class Type>
 BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getLeft() {
-    return left;
+    return this->left;
 }
 
 template<class Type>
 BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRight() {
-    return right;
+    return this->right;
 }
 
 template<class Type>
