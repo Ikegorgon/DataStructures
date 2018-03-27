@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>420</x>
-      <y>350</y>
+      <x>430</x>
+      <y>140</y>
       <w>260</w>
       <h>130</h>
     </coordinates>
@@ -22,8 +22,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>920</x>
-      <y>350</y>
+      <x>930</x>
+      <y>140</y>
       <w>360</w>
       <h>220</h>
     </coordinates>
@@ -46,13 +46,37 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>670</x>
-      <y>370</y>
+      <x>680</x>
+      <y>160</y>
       <w>270</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 Extends</panel_attributes>
     <additional_attributes>10.0;20.0;250.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>470</x>
+      <y>320</y>
+      <w>360</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>Tree&lt;Type&gt;
+--
+# root : BinaryTreeNode&lt;Type&gt;
+--
++ getSize() : int
++ getHeight() : int
++ isComplete() : bool
++ isBalanced() : bool
++ insert(Type) : void
++ contains(Type) : void
++ remove(Type) : void
++ inOrderTraversal() : void
++ preOrderTraversal() : void
++ postOrderTraversal() : void</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
