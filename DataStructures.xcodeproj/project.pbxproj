@@ -65,6 +65,9 @@
 		53BAA9E22034BB13003FC744 /* LinkedListTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedListTester.hpp; sourceTree = "<group>"; };
 		53BAA9E52034BCE4003FC744 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 		53C925AF2022439100107FC5 /* DataStructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructures; sourceTree = BUILT_PRODUCTS_DIR; };
+		53D57908206ABF4700B63BBA /* BinaryTreeNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryTreeNode.hpp; sourceTree = "<group>"; };
+		53D5790A206AC16D00B63BBA /* Tree.uxf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tree.uxf; sourceTree = "<group>"; };
+		53D5790B206AC17600B63BBA /* Graph.uxf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Graph.uxf; sourceTree = "<group>"; };
 		53E0375C204DC56400995831 /* RecursionTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RecursionTester.cpp; sourceTree = "<group>"; };
 		53E0375D204DC56400995831 /* RecursionTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RecursionTester.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +86,7 @@
 		531AEAFA203F4A620093DF9D /* NonLinear */ = {
 			isa = PBXGroup;
 			children = (
+				53D5790B206AC17600B63BBA /* Graph.uxf */,
 				538E77452060362400AFD66D /* Graph.hpp */,
 			);
 			path = NonLinear;
@@ -104,10 +108,12 @@
 		535A9A3B202A2C3900693EAF /* Nodes */ = {
 			isa = PBXGroup;
 			children = (
+				53D5790A206AC16D00B63BBA /* Tree.uxf */,
 				538DB580202CE1F300B6B91A /* Node.uxf */,
 				535A9A3D202A2C5400693EAF /* Node.hpp */,
 				538DB582202CE20700B6B91A /* LinearNode.hpp */,
 				531AEB00203F53150093DF9D /* DoubleNode.hpp */,
+				53D57908206ABF4700B63BBA /* BinaryTreeNode.hpp */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
