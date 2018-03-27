@@ -17,6 +17,7 @@
 		535CAB8120224F87003E2BB2 /* CrimeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 535CAB7F20224F87003E2BB2 /* CrimeData.cpp */; };
 		535FC905206577C000D77168 /* GraphTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 535FC903206577C000D77168 /* GraphTester.cpp */; };
 		53BAA9E32034BB13003FC744 /* LinkedListTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53BAA9E12034BB13003FC744 /* LinkedListTester.cpp */; };
+		53D57911206ACA2700B63BBA /* BinaryTreeTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53D5790F206ACA2700B63BBA /* BinaryTreeTester.cpp */; };
 		53E0375E204DC56400995831 /* RecursionTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53E0375C204DC56400995831 /* RecursionTester.cpp */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,8 @@
 		53D5790A206AC16D00B63BBA /* Tree.uxf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tree.uxf; sourceTree = "<group>"; };
 		53D5790B206AC17600B63BBA /* Graph.uxf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Graph.uxf; sourceTree = "<group>"; };
 		53D5790D206AC85B00B63BBA /* Tree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Tree.hpp; sourceTree = "<group>"; };
+		53D5790F206ACA2700B63BBA /* BinaryTreeTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTreeTester.cpp; sourceTree = "<group>"; };
+		53D57910206ACA2700B63BBA /* BinaryTreeTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryTreeTester.hpp; sourceTree = "<group>"; };
 		53E0375C204DC56400995831 /* RecursionTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RecursionTester.cpp; sourceTree = "<group>"; };
 		53E0375D204DC56400995831 /* RecursionTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RecursionTester.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,6 +138,8 @@
 				5345CAB5205AE99600BD88FA /* SortingTester.hpp */,
 				535FC903206577C000D77168 /* GraphTester.cpp */,
 				535FC904206577C000D77168 /* GraphTester.hpp */,
+				53D5790F206ACA2700B63BBA /* BinaryTreeTester.cpp */,
+				53D57910206ACA2700B63BBA /* BinaryTreeTester.hpp */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -294,6 +299,7 @@
 				535CAB8120224F87003E2BB2 /* CrimeData.cpp in Sources */,
 				535CAB732022452B003E2BB2 /* Runner.cpp in Sources */,
 				535CAB7720224551003E2BB2 /* Controller.cpp in Sources */,
+				53D57911206ACA2700B63BBA /* BinaryTreeTester.cpp in Sources */,
 				535FC905206577C000D77168 /* GraphTester.cpp in Sources */,
 				5345CAB6205AE99600BD88FA /* SortingTester.cpp in Sources */,
 				53BAA9E32034BB13003FC744 /* LinkedListTester.cpp in Sources */,
