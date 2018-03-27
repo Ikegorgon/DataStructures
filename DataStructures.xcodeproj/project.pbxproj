@@ -68,6 +68,7 @@
 		53D57908206ABF4700B63BBA /* BinaryTreeNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryTreeNode.hpp; sourceTree = "<group>"; };
 		53D5790A206AC16D00B63BBA /* Tree.uxf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Tree.uxf; sourceTree = "<group>"; };
 		53D5790B206AC17600B63BBA /* Graph.uxf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Graph.uxf; sourceTree = "<group>"; };
+		53D5790D206AC85B00B63BBA /* Tree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Tree.hpp; sourceTree = "<group>"; };
 		53E0375C204DC56400995831 /* RecursionTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RecursionTester.cpp; sourceTree = "<group>"; };
 		53E0375D204DC56400995831 /* RecursionTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RecursionTester.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +89,7 @@
 			children = (
 				53D5790B206AC17600B63BBA /* Graph.uxf */,
 				538E77452060362400AFD66D /* Graph.hpp */,
+				53D5790D206AC85B00B63BBA /* Tree.hpp */,
 			);
 			path = NonLinear;
 			sourceTree = "<group>";
