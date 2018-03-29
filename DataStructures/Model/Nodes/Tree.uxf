@@ -79,4 +79,38 @@ Extends</panel_attributes>
 + postOrderTraversal() : void</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>860</x>
+      <y>410</y>
+      <w>580</w>
+      <h>380</h>
+    </coordinates>
+    <panel_attributes>BinarySearchTree&lt;Type&gt;
+--
++ BinarySearchTree() : constructor 
++ ~BinarySearchTree() : destructor
++ getSize() : int
++ getHeight() : int
++ isComplete() : bool
++ isBalanced() : bool
+# calculateSize(BinaryTreeNode&lt;Type&gt; * startNode) : int
+# calculateHeight(BinaryTreeNode&lt;Type&gt; * startNode) : int
+# isBalanced(BinaryTreeNode&lt;Type&gt; * startNode) : bool
+# isComplete(BinaryTreeNode&lt;Type&gt; * startNode, int index, int size) : bool
++ insert(Type) : void
++ contains(Type) : void
++ remove(Type) : void
+# removeNode(BinaryTreeNode&lt;Type&gt; * removeMe) : void
++ inOrderTraversal() : void
++ preOrderTraversal() : void
++ postOrderTraversal() : void
+# inOrderTraversal(BinaryTreeNode&lt;Type&gt; * inStart) : void
+# preOrderTraversal(BinaryTreeNode&lt;Type&gt; * preStart) : void
+# postOrderTraversal(BinaryTreeNode&lt;Type&gt; * postStart) : void
+# getRightMostChild(BinaryTreeNode&lt;Type&gt; * current) : BinaryTreeNode&lt;Type&gt; *
+# getLeftMostChild(BinaryTreeNode&lt;Type&gt; * current) : BinaryTreeNode&lt;Type&gt; * </panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>
