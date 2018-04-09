@@ -248,7 +248,7 @@ void BinarySearchTree<Type> :: insert(Type itemToInsert) {
         } else {
             previous->setRightNode(insertMe);
         }
-        insertMe->setRightNode(previous);
+        insertMe->setRootNode(previous);
     }
 }
 
