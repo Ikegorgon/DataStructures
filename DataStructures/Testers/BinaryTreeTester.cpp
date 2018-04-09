@@ -24,4 +24,6 @@ void BinaryTreeTester :: testBinaryTree() {
     testTree.insert(600);
     
     testTree.inOrderTraversal();
+    testTree.preOrderTraversal();
+    testTree.postOrderTraversal();
 }

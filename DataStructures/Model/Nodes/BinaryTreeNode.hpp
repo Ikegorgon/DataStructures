@@ -58,8 +58,8 @@ BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRight() {
 }
 
 template<class Type>
-void BinaryTreeNode<Type> :: setRootNode(BinaryTreeNode<Type> * root) {
-    this->root = root;
+void BinaryTreeNode<Type> :: setRootNode(BinaryTreeNode<Type> * newRoot) {
+    root = newRoot;
 }
 
 template<class Type>
