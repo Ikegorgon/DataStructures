@@ -22,8 +22,12 @@ void BinaryTreeTester :: testBinaryTree() {
     testTree.insert(9001);
     testTree.insert(10);
     testTree.insert(600);
-    
-    testTree.inOrderTraversal();
-    testTree.preOrderTraversal();
-    testTree.postOrderTraversal();
+//
+//    testTree.inOrderTraversal();
+//    testTree.preOrderTraversal();
+//    testTree.postOrderTraversal();
+    testTree2.insert(1);
+    testTree.isBalanced();
+    testTree.isComplete();
+    testTree.getHeight();
 }

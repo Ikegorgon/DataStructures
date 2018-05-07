@@ -11,12 +11,14 @@
 
 #include "../Model/Nodes/BinaryTreeNode.hpp"
 #include "../Model/Structures/NonLinear/BinarySearchTree.hpp"
+#include "../Model/Structures/NonLinear/AVLTree.hpp"
 #include <iostream>
 
 class BinaryTreeTester {
 private:
     BinaryTreeNode<int> testNode;
     BinarySearchTree<int> testTree;
+    AVLTree<int> testTree2;
 public:
     void testBinaryTree();
 };
